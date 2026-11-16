@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="/favicon.png">
+<title>Estanhagem Daniel — Revestimentos metálicos e soluções para a indústria</title>
+<meta name="description" content="Estanhagem, pintura eletrostática, zincagem eletrolítica e tratamento de superfície. Solicite orçamento pelo WhatsApp.">
+<meta property="og:title" content="Estanhagem Daniel">
+<meta property="og:description" content="Revestimentos metálicos e soluções para a indústria.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--graf:#171A1D;--blk:#101214;--silver:#B8BDC2;--ice:#F1F0EC;--cu:#A65A2E;--ease:cubic-bezier(.22,1,.36,1);
+--mx:0;--my:0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--blk);color:var(--ice);font:400 16px/1.6 Inter,system-ui,sans-serif;background-color:#101214}
+h1,h2,h3{font-family:Sora,'Space Grotesk',sans-serif;margin:0;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cu);outline-offset:3px}
+.tag{font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--silver)}
+.btn{display:inline-block;padding:15px 26px;border-radius:4px;font:600 13px/1 Sora,sans-serif;letter-spacing:.08em;text-decoration:none;text-transform:uppercase;border:1px solid var(--cu);transition:background .25s,color .25s}
+.btn.pri{background:var(--cu);color:#fff}.btn.pri:hover{background:#c26a37}
+.btn.sec{color:var(--ice);border-color:rgba(184,189,194,.45)}.btn.sec:hover{border-color:var(--cu);color:var(--cu)}
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:20;padding:calc(18px + env(safe-area-inset-top,0px)) 5vw 18px;display:flex;justify-content:space-between;align-items:center;transition:background .3s,backdrop-filter .3s}
+header.solid{background:rgba(16,18,20,.82);backdrop-filter:blur(12px)}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:700 15px/1 Sora,sans-serif;letter-spacing:.06em}
+.logo svg{width:34px;height:34px}.logo small{display:block;font:500 10px/1.2 'JetBrains Mono',monospace;color:var(--silver);letter-spacing:.2em;margin-top:4px}
+nav{display:flex;gap:32px}nav a{text-decoration:none;font:500 14px Inter,sans-serif;color:var(--silver);transition:color .2s}nav a:hover{color:var(--ice)}
+/* hero */
+.hero{position:relative;height:100dvh;min-height:620px;overflow:hidden;background:#151617;isolation:isolate}
+.layer{position:absolute;inset:-3%;will-change:transform}
+.layer img,.layer svg{width:100%;height:100%;object-fit:cover;object-position:62% 100%;display:block}
+.bg{z-index:0;transform:translate3d(calc(var(--mx)*-20px),calc(var(--my)*-7px),0)}
+.bgi{position:absolute;inset:0;animation:bgin 1.6s var(--ease) both}
+.big{position:absolute;z-index:1;left:0;right:0;top:15%;text-align:center;font:800 clamp(110px,24vw,460px)/.8 Sora,sans-serif;color:var(--ice);opacity:.94;letter-spacing:-.03em;transform:translate3d(calc(var(--mx)*6px),calc(var(--my)*2px),0);pointer-events:none;user-select:none}
+.big span{display:block;animation:reveal 1.1s var(--ease) .35s both}
+.lg{height:46px;width:auto;display:block;mix-blend-mode:lighten}.bgi{display:grid;place-items:start center;padding-top:12vh}.bgi img{width:min(80vw,121vh)!important;height:auto!important;object-fit:contain!important;-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent);mask-composite:intersect}header:not(.solid) .logo{opacity:0;pointer-events:none}.logo{transition:opacity .3s}.gp{color:var(--silver);max-width:52ch;margin:28px 0 0;font-size:18px}
+.mid{z-index:2;transform:translate3d(calc(var(--mx)*22px),calc(var(--my)*9px),0)}
+.fg{z-index:3;transform:translate3d(calc(var(--mx)*42px),calc(var(--my)*16px),0)}
+.mid>div,.fg>div{position:absolute;inset:0}
+.mid>div{animation:up6 1.2s var(--ease) both}.fg>div{animation:up10 1.3s var(--ease) both}
+.shade{position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(to top,rgba(21,22,23,.75),rgba(21,22,23,0) 40%)}
+.copy{position:absolute;z-index:10;left:5vw;bottom:calc(9vh + env(safe-area-inset-bottom,0px));max-width:min(640px,88vw)}
+.copy h1{font-size:clamp(30px,3.5vw,54px);font-weight:700;animation:rise 1s var(--ease) .6s both}
+.copy p{color:var(--silver);margin:18px 0 28px;max-width:46ch;animation:rise 1s var(--ease) .72s both}
+.copy .row{display:flex;gap:12px;flex-wrap:wrap;animation:rise 1s var(--ease) .84s both}
+.scroll{position:absolute;z-index:10;left:5vw;bottom:calc(2.5vh + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;animation:rise 1s var(--ease) 1.1s both}
+.scroll i{width:1px;height:28px;background:var(--cu)}
+.card{display:none;position:absolute;z-index:10;right:4vw;bottom:calc(8vh + env(safe-area-inset-bottom,0px));padding:24px 28px;min-width:290px;background:rgba(23,26,29,.65);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:18px;border:1px solid rgba(184,189,194,.14);animation:rise 1s var(--ease) 1s both}
+.card ul{list-style:none;margin:14px 0 0;padding:0}.card li{padding:9px 0 9px 14px;border-left:2px solid var(--cu);margin-top:8px;font:600 13px/1.2 Sora,sans-serif;letter-spacing:.06em;background:linear-gradient(90deg,rgba(166,90,46,.12),transparent)}
+@media(min-width:1024px){.card{display:block}}
+@media(max-width:1023px){nav{gap:18px}}
+@media(max-width:639px){.bgi{padding-top:15vh}.bgi img{width:94vw!important}nav a:not(.keep){display:none}.big{font-size:30vw;top:18%}.layer img,.layer svg{object-position:64% 100%}.copy h1{font-size:31px}.btn{padding:14px 20px}}
+@keyframes bgin{from{transform:scale(1.08)}to{transform:scale(1)}}
+@keyframes up6{from{transform:translateY(6%)}to{transform:none}}
+@keyframes up10{from{transform:translateY(10%)}to{transform:none}}
+@keyframes reveal{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+/* sections */
+section{padding:clamp(70px,10vw,140px) 5vw}
+.wrap{max-width:1240px;margin:0 auto}
+h2{font-size:clamp(28px,3.6vw,52px);font-weight:700;max-width:18ch}
+.about{background:var(--ice);color:var(--graf)}
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.about p{font-size:18px;max-width:52ch;margin:24px 0 0;color:#3a3f44}
+.about .tag{color:var(--cu)}
+.photo{aspect-ratio:4/3;border-radius:6px;overflow:hidden;position:relative;background:var(--graf)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{position:absolute;inset:0;display:flex;align-items:flex-end;padding:16px;background:repeating-linear-gradient(115deg,#1d2125 0 14px,#23282c 14px 15px),var(--graf)}
+.ph b{font:500 11px 'JetBrains Mono',monospace;color:var(--silver);letter-spacing:.1em;text-transform:uppercase}
+.services{background:var(--graf)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.sc{display:flex;flex-direction:column;background:var(--blk);border:1px solid rgba(184,189,194,.12);border-radius:6px;overflow:hidden;transition:border-color .3s,transform .3s var(--ease)}
+.sc:hover{border-color:var(--cu);transform:translateY(-4px)}
+.sc .photo{aspect-ratio:4/3;border-radius:0}
+.sc div.b{padding:22px;display:flex;flex-direction:column;flex:1}
+.sc h3{font-size:18px;font-weight:600}.sc p{color:var(--silver);font-size:15px;margin:12px 0 22px;flex:1}
+.sc .btn{text-align:center;font-size:12px;padding:13px 14px}
+.diff .list{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;border-top:1px solid var(--cu)}
+.diff .it{padding:28px 26px 0 0}
+.diff svg{width:34px;height:34px;stroke:var(--cu);fill:none;stroke-width:1.6}
+.diff h3{font-size:17px;font-weight:600;margin-top:18px}
+.gal{background:var(--graf)}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:44px;padding-bottom:14px}
+.strip .photo{flex:0 0 min(78vw,640px);aspect-ratio:16/10;scroll-snap-align:start}
+.cta{background:linear-gradient(135deg,var(--graf),var(--blk));border-top:2px solid var(--cu);text-align:left}
+.cta p{color:var(--silver);max-width:52ch;margin:22px 0 32px;font-size:18px}
+footer{background:var(--blk);padding:60px 5vw calc(30px + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(184,189,194,.12)}
+footer .g{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:36px}
+footer h4{font:500 12px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--silver);margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0}footer li{margin:7px 0;font-size:15px;color:#cfd2d5}footer a{text-decoration:none}footer a:hover{color:var(--cu)}
+footer .copy2{margin-top:44px;font-size:13px;color:var(--silver)}
+.wa{position:fixed;z-index:30;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:var(--cu);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.45);transition:transform .25s var(--ease)}
+.wa:hover{transform:scale(1.08)}.wa svg{width:30px;height:30px;fill:#fff}
+@media(max-width:1023px){.cards,.diff .list{grid-template-columns:repeat(2,1fr)}.about .grid{grid-template-columns:1fr}footer .g{grid-template-columns:1fr 1fr}}
+@media(max-width:639px){.cards,.diff .list{grid-template-columns:1fr}footer .g{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.layer,.big{transform:none!important}}
+</style>
+</head>
+<body>
+<header id="top">
+  <a class="logo" href="#inicio" aria-label="Estanhagem Daniel — início">
+    <!-- Substitua este símbolo provisório pela logo oficial em CONFIG.logo -->
+    <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="4" fill="none" stroke="#B8BDC2" stroke-width="2"/><path d="M12 11h9a9 9 0 0 1 0 18h-9z" fill="#A65A2E"/></svg>
+    <span id="logoTxt">ESTANHAGEM DANIEL<small>REVESTIMENTOS METÁLICOS</small></span>
+  </a>
+  <nav aria-label="Principal"><a href="#inicio">Início</a><a href="#empresa">Empresa</a><a href="#servicos">Serviços</a><a href="#estrutura">Estrutura</a><a class="keep" href="#contato">Contato</a></nav>
+</header>
+
+<main>
+<div class="hero" id="inicio">
+  <div class="layer bg" aria-hidden="true"><div class="bgi" id="L-bg"></div></div>
+    <div class="layer mid" aria-hidden="true"><div id="L-mid"></div></div>
+  <div class="layer fg" aria-hidden="true"><div id="L-fg"></div></div>
+  <div class="shade"></div>
+  <div class="copy">
+    <h1>REVESTIMENTOS METÁLICOS E SOLUÇÕES PARA A INDÚSTRIA.</h1>
+    <p>Especialistas em revestimentos metálicos e tratamento de superfícies.</p>
+    <div class="row"><a class="btn pri" data-wa="geral" href="#" target="_blank" rel="noopener">Solicitar orçamento</a><a class="btn sec" href="#servicos">Conheça nossos serviços</a></div>
+  </div>
+  <a class="scroll tag" href="#empresa"><i></i>Role</a>
+  <aside class="card" aria-label="Especialidades"><div class="tag">Especialidades</div>
+    <ul><li>ESTANHAGEM</li><li>PINTURA ELETROSTÁTICA</li><li>ZINCAGEM ELETROLÍTICA</li><li>TRATAMENTO DE SUPERFÍCIE</li></ul></aside>
+</div>
+
+<section class="about" id="empresa"><div class="wrap grid">
+  <div><div class="tag">Empresa</div><h2 style="margin-top:16px">TECNOLOGIA E PRECISÃO EM CADA PROCESSO.</h2>
+  <p>A Estanhagem Daniel atua no segmento de revestimentos metálicos e soluções para metais, oferecendo serviços especializados para atender às necessidades de diferentes aplicações industriais.</p></div>
+  <div class="photo" data-img="empresa" data-label="Estrutura industrial"></div>
+</div></section>
+
+<section class="services" id="servicos"><div class="wrap">
+  <div class="tag">Serviços</div><h2 style="margin-top:16px">SOLUÇÕES EM REVESTIMENTOS METÁLICOS.</h2>
+  <div class="cards" id="cards"></div>
+</div></section>
+
+<section class="diff"><div class="wrap">
+  <div class="tag">Diferenciais</div><h2 style="margin-top:16px">COMPROMISSO COM QUALIDADE EM CADA ETAPA.</h2>
+  <div class="list">
+    <div class="it"><svg viewBox="0 0 34 34"><rect x="5" y="5" width="24" height="24" rx="2"/><path d="M5 17h24M17 5v24"/></svg><h3>Especialização em revestimentos metálicos.</h3></div>
+    <div class="it"><svg viewBox="0 0 34 34"><path d="M4 26l8-14 6 9 4-6 8 11z"/></svg><h3>Soluções para diferentes aplicações industriais.</h3></div>
+    <div class="it"><svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="5"/><path d="M17 3v6M17 25v6M3 17h6M25 17h6"/></svg><h3>Atenção aos processos de tratamento.</h3></div>
+    <div class="it"><svg viewBox="0 0 34 34"><path d="M6 18l7 7 15-15"/></svg><h3>Compromisso com qualidade e acabamento.</h3></div>
+  </div>
+</div></section>
+
+<section class="gal" id="estrutura"><div class="wrap">
+  <div class="tag">Estrutura</div><h2 style="margin-top:16px">CONHEÇA NOSSA OPERAÇÃO.</h2>
+  <p class="gp">Fale com a nossa equipe pelo WhatsApp para conhecer os processos e as soluções para a sua aplicação.</p>
+</div></section>
+
+<section class="cta" id="contato"><div class="wrap">
+  <h2 style="max-width:22ch">PRECISA DE UMA SOLUÇÃO EM REVESTIMENTO METÁLICO?</h2>
+  <p>Entre em contato com nossa equipe e apresente sua necessidade. Estamos prontos para entender sua demanda e avaliar a melhor solução.</p>
+  <a class="btn pri" data-wa="geral" href="#" target="_blank" rel="noopener">Solicitar orçamento pelo WhatsApp</a>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="g">
+  <div><div class="logo" style="margin-bottom:14px"><span>ESTANHAGEM DANIEL</span></div><p style="color:var(--silver);font-size:15px;max-width:34ch;margin:0">Revestimentos metálicos e soluções para a indústria.</p></div>
+  <div><h4>Navegação</h4><ul><li><a href="#inicio">Início</a></li><li><a href="#empresa">Empresa</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#estrutura">Estrutura</a></li><li><a href="#contato">Contato</a></li></ul></div>
+  <div><h4>Serviços</h4><ul><li>Estanhagem</li><li>Pintura eletrostática</li><li>Zincagem eletrolítica</li><li>Tratamento de superfície</li></ul></div>
+  <div><h4>Contato</h4><ul><li><a data-wa="geral" href="#" target="_blank" rel="noopener">WhatsApp</a></li><li id="fPhone"></li><li id="fAddr"></li></ul></div>
+</div><div class="copy2">© <span id="yr"></span> Estanhagem Daniel. Todos os direitos reservados.</div></div></footer>
+
+<a class="wa" data-wa="geral" href="#" target="_blank" rel="noopener" aria-label="Solicitar orçamento pelo WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-3.7-.9-3.1-1.3-5-4.4-5.2-4.6-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .5-.1.7.5l1 2.3c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.300 2.400 1.500.3.100.5.100.7-.1l1-1.200c.2-.3.4-.3.7-.2l2.200 1c.3.1.5.2.5.4.100.200.100.800-.1 1.500z"/></svg></a>
+
+<script>
+/* ===== CONFIGURAÇÃO — edite aqui ===== */
+const CONFIG = {
+  whatsapp: "5551981456105",   // ex.: "5551999999999"
+  telefone: "(51) 98145-6105",                // aparece no rodapé quando preenchido
+  endereco: "R. Sergipe, 394 - Neópolis, Gravataí - RS, 94100-000",                // aparece no rodapé quando preenchido
+  logo: "logo/logo.webp",                    // URL da logo oficial (substitui o símbolo provisório)
+  imagens: {
+    backdrop: "images/backdrop.webp",
+    estanhagem: "images/estanhagem.webp",
+    pintura: "images/pintura.webp",
+    zincagem: "images/zincagem.webp",
+    tratamento: "images/tratamento.webp",
+    empresa: "images/empresa.webp",
+    processo: "",
+    qualidade: "",
+    estrutura: "",
+    midground: "", foreground: ""
+  }
+};
+const MSG = {
+  geral: "Olá! Conheci a Estanhagem Daniel pelo site e gostaria de solicitar um orçamento.",
+  estanhagem: "Olá! Gostaria de informações e orçamento sobre o serviço de estanhagem.",
+  pintura: "Olá! Gostaria de informações e orçamento sobre pintura eletrostática.",
+  zincagem: "Olá! Gostaria de informações e orçamento sobre zincagem eletrolítica.",
+  tratamento: "Olá! Gostaria de informações e orçamento sobre tratamento de superfície."
+};
+const SERV = [
+  ["estanhagem","ESTANHAGEM","Revestimento metálico com estanho, destinado a aplicações que exigem características específicas de proteção e acabamento."],
+  ["pintura","PINTURA ELETROSTÁTICA","Aplicação de pintura eletrostática em componentes metálicos, proporcionando acabamento uniforme e proteção conforme as especificações do processo."],
+  ["zincagem","ZINCAGEM ELETROLÍTICA","Processo de revestimento com zinco por via eletrolítica, utilizado na proteção de componentes metálicos contra a corrosão."],
+  ["tratamento","TRATAMENTO DE SUPERFÍCIE","Processos de preparação e tratamento de superfícies metálicas, adequados às necessidades de cada aplicação."]
+];
+const I = CONFIG.imagens, $ = s => document.querySelector(s);
+const waUrl = k => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(MSG[k]);
+function img(src, alt, eager){const e=document.createElement("img");e.src=src;e.alt=alt||"";e.decoding="async";if(eager){e.fetchPriority="high"}else e.loading="lazy";return e}
+function photo(el, key, label){
+  if(I[key]){el.appendChild(img(I[key], label))}
+  else{const p=document.createElement("div");p.className="ph";p.innerHTML="<b>"+label+" · imagem conceitual pendente</b>";el.appendChild(p)}
+}
+/* Camadas provisórias em SVG (mesmo enquadramento 16:9, luz vinda da esquerda) até os PNG/WebP reais serem aplicados */
+const svgBg='<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#2a2f34"/><stop offset="1" stop-color="#15181a"/></linearGradient><linearGradient id="b" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#1b1f22"/><stop offset="1" stop-color="#0d0f10"/></linearGradient></defs><rect width="1600" height="900" fill="url(#b)"/><g opacity=".5" fill="#23282c"><rect x="80" y="60" width="140" height="420"/><rect x="420" y="20" width="90" height="460"/><rect x="900" y="80" width="200" height="400"/><rect x="1320" y="40" width="120" height="440"/></g><g fill="url(#a)" stroke="#3a4046"><rect x="40" y="560" width="360" height="340"/><rect x="460" y="610" width="300" height="290"/><rect x="820" y="580" width="380" height="320"/></g><g fill="#0f1214"><rect x="60" y="590" width="320" height="30"/><rect x="480" y="640" width="260" height="24"/><rect x="840" y="610" width="340" height="28"/></g></svg>';
+const svgMid='<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="m" x1="0" x2="1"><stop offset="0" stop-color="#d3d7da"/><stop offset=".5" stop-color="#8d949a"/><stop offset="1" stop-color="#3b4045"/></linearGradient></defs><g fill="url(#m)"><polygon points="520,900 560,640 900,610 940,900"/><polygon points="760,900 820,700 1200,660 1240,900"/><polygon points="1020,900 1080,600 1320,580 1360,900"/></g><polygon points="760,700 1200,660 1200,672 760,712" fill="#A65A2E" opacity=".6"/></svg>';
+const svgFg='<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="f" x1="0" x2="1"><stop offset="0" stop-color="#e2e5e7"/><stop offset=".55" stop-color="#9aa1a7"/><stop offset="1" stop-color="#454b50"/></linearGradient></defs><g fill="url(#f)"><polygon points="1160,900 1210,520 1380,470 1420,900"/><polygon points="1380,900 1430,380 1520,340 1600,360 1600,900"/><polygon points="1280,900 1320,640 1440,610 1470,900"/></g><polygon points="1430,380 1520,340 1600,360 1600,372 1520,352 1430,392" fill="#A65A2E" opacity=".7"/></svg>';
+function layer(id,key,svg,eager){const el=$(id);if(I[key])el.appendChild(img(I[key],"",eager));else el.innerHTML=svg;el.querySelectorAll("img,svg").forEach(n=>n.style.cssText+="width:100%;height:100%;object-fit:cover;object-position:62% 100%")}
+layer("#L-bg","backdrop",svgBg,true);if(!I.backdrop||I.midground)layer("#L-mid","midground",svgMid);if(!I.backdrop||I.foreground)layer("#L-fg","foreground",svgFg);
+
+document.querySelectorAll("[data-img]").forEach(el=>photo(el,el.dataset.img,el.dataset.label));
+$("#cards").innerHTML=SERV.map(([k,n,d])=>'<article class="sc"><div class="photo" data-svc="'+k+'"></div><div class="b"><h3>'+n+'</h3><p>'+d+'</p><a class="btn pri" data-wa="'+k+'" href="#" target="_blank" rel="noopener">Solicitar orçamento</a></div></article>').join("");
+SERV.forEach(([k,n])=>photo($('[data-svc="'+k+'"]'),k,n));
+document.querySelectorAll("[data-wa]").forEach(a=>a.href=waUrl(a.dataset.wa));
+if(CONFIG.logo){$("#logoTxt").previousElementSibling.remove();$("#logoTxt").replaceWith(Object.assign(img(CONFIG.logo,"Estanhagem Daniel"),{className:"lg"}))}
+if(CONFIG.telefone)$("#fPhone").textContent=CONFIG.telefone;else $("#fPhone").remove();
+if(CONFIG.endereco)$("#fAddr").textContent=CONFIG.endereco;else $("#fAddr").remove();
+document.querySelectorAll("footer .logo").forEach(e=>e.replaceWith(Object.assign(img(CONFIG.logo,"Estanhagem Daniel"),{className:"lg",style:"height:64px;margin-bottom:14px"})));
+$("#yr").textContent=new Date().getFullYear();
+addEventListener("scroll",()=>$("#top").classList.toggle("solid",scrollY>40),{passive:true});
+
+/* Parallax */
+(function(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  const root=document.documentElement,hero=$("#inicio"),touch=matchMedia("(pointer: coarse)").matches||innerWidth<1024;
+  const k=innerWidth<1024?.5:1;let tx=0,ty=0,x=0,y=0,vis=true;
+  if(!touch)addEventListener("mousemove",e=>{tx=(e.clientX/innerWidth-.5)*k;ty=(e.clientY/innerHeight-.5)*k},{passive:true});
+  new IntersectionObserver(([e])=>vis=e.isIntersecting).observe(hero);
+  (function f(t){
+    if(vis){if(touch)tx=Math.sin(t/5200)*.22;
+      x+=(tx-x)*.08;y+=(ty-y)*.08;
+      root.style.setProperty("--mx",x.toFixed(4));root.style.setProperty("--my",y.toFixed(4))}
+    requestAnimationFrame(f)})(0);
+})();
+</script>
+</body>
+</html>
